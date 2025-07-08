@@ -5,17 +5,19 @@ import BlogContent from '@/components/blog/blog-content';
 import BlogHeader from '@/components/blog/blog-header';
 import BlogRelated from '@/components/blog/blog-related';
 
-interface Params {
+// Use a simple type that doesn't cause issues
+type PageParams = {
   slug: string;
-}
+};
 
 // Generate metadata for each blog post
 export async function generateMetadata({ 
   params 
 }: { 
-  params: Params 
+  params: PageParams
 }): Promise<Metadata> {
-  const post = await getBlogPost(params.slug || '');
+  const slug = params?.slug || '';
+  const post = await getBlogPost(slug);
   
   if (!post) {
     return {
@@ -55,30 +57,25 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   try {
     const posts = await getAllBlogPosts();
-    
-    // Ensure we return simple objects with just the slug property
     return posts.map((post) => ({
       slug: post.slug,
     }));
   } catch (error) {
     console.error('Error generating static params:', error);
-    // Return a default post to ensure build doesn't fail
     return [{ slug: 'sample-post' }];
   }
 }
 
-interface PageProps {
-  params: Params;
-}
-
-const BlogPostPage = async ({ params }: PageProps) => {
-  const post = await getBlogPost(params.slug || '');
+// Simple page function that doesn't use custom types
+export default async function Page({ params }: { params: { slug: string } }) {
+  const slug = params?.slug || '';
+  const post = await getBlogPost(slug);
   
   if (!post) {
     notFound();
   }
   
-  const relatedPosts = await getRelatedBlogPosts(params.slug || '');
+  const relatedPosts = await getRelatedBlogPosts(slug);
   
   return (
     <div className="container py-8 md:py-12">
@@ -90,6 +87,4 @@ const BlogPostPage = async ({ params }: PageProps) => {
       <BlogRelated relatedPosts={relatedPosts} />
     </div>
   );
-}
-
-export default BlogPostPage; 
+} 
