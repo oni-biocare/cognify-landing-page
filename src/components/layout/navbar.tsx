@@ -166,7 +166,7 @@ export const Navbar = () => {
               <div className="grid w-[800px] grid-cols-2 gap-5 p-4">
                 <Image
                   src="/onibiocare-logo-full.png"
-                  alt="Insight Agent Logo"
+                  alt="Cognify Metrics Logo"
                   className="h-full w-full rounded-md object-cover"
                   width={800}
                   height={800}

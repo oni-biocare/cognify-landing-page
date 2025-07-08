@@ -22,7 +22,7 @@ export const metadata = {
   ],
   openGraph: {
     type: "website",
-    url: "https://insightagent.cloud",
+    url: "https://cognifymetrics.com",
     title: "Cognify Metrics - AI-Powered Market Intelligence for E-commerce",
     description: "Transform your e-commerce business with AI-powered trend analysis, keyword optimization, and predictive market intelligence. Trusted by 1000+ e-commerce businesses.",
     images: [
@@ -36,7 +36,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@InsightAgentAI",
+    site: "@CognifyMetrics",
     title: "Cognify Metrics - AI Market Intelligence for E-commerce",
     description: "Discover trending products before your competitors with AI-powered market intelligence. Join 1000+ successful e-commerce businesses.",
     images: ["/twitter-card.jpg"],
