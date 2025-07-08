@@ -5,9 +5,9 @@ import BlogContent from '@/components/blog/blog-content';
 import BlogHeader from '@/components/blog/blog-header';
 import BlogRelated from '@/components/blog/blog-related';
 
-type Params = {
+interface Params {
   slug: string;
-};
+}
 
 // Generate metadata for each blog post
 export async function generateMetadata({ 
@@ -15,8 +15,7 @@ export async function generateMetadata({
 }: { 
   params: Params 
 }): Promise<Metadata> {
-  const finalParams = await params;
-  const post = await getBlogPost(finalParams?.slug || '');
+  const post = await getBlogPost(params.slug || '');
   
   if (!post) {
     return {
@@ -53,7 +52,7 @@ export async function generateMetadata({
 }
 
 // Generate static paths for all blog posts
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
+export async function generateStaticParams() {
   try {
     const posts = await getAllBlogPosts();
     
@@ -68,19 +67,18 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }
 }
 
-export default async function BlogPostPage({ 
-  params,
-}: {
+interface PageProps {
   params: Params;
-}) {
-  const finalParams = await params;
-  const post = await getBlogPost(finalParams?.slug || '');
+}
+
+const BlogPostPage = async ({ params }: PageProps) => {
+  const post = await getBlogPost(params.slug || '');
   
   if (!post) {
     notFound();
   }
   
-  const relatedPosts = await getRelatedBlogPosts(finalParams?.slug || '');
+  const relatedPosts = await getRelatedBlogPosts(params.slug || '');
   
   return (
     <div className="container py-8 md:py-12">
@@ -92,4 +90,6 @@ export default async function BlogPostPage({
       <BlogRelated relatedPosts={relatedPosts} />
     </div>
   );
-} 
+}
+
+export default BlogPostPage; 

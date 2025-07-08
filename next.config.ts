@@ -30,14 +30,8 @@ const nextConfig = {
   },
   // Disable generation of pages for assets
   pageExtensions: ['ts', 'tsx', 'mdx'],
-  // Use Node.js server runtime for all pages including dynamic routes
-  output: 'standalone',
-  // External packages for server components
-  serverExternalPackages: ['sharp', 'onnxruntime-node'],
-  experimental: {
-    // This ensures proper handling of dynamic route static generation
-    serverComponentsExternalPackages: ['sharp', 'onnxruntime-node'],
-  },
+  // Change output mode to export for static site
+  output: 'export',
 };
 
 export default nextConfig;
