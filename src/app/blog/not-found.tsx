@@ -7,7 +7,7 @@ export default function BlogNotFound() {
       <div className="max-w-md mx-auto text-center">
         <h1 className="text-3xl font-bold mb-4">Blog Post Not Found</h1>
         <p className="text-muted-foreground mb-8">
-          Sorry, the blog post you're looking for doesn't exist or may have been moved.
+          Sorry, the blog post you&apos;re looking for doesn&apos;t exist or may have been moved.
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild>

@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { Separator } from '@/components/ui/separator';
+import Link from 'next/link';
 
 interface BlogContentProps {
   content: string;
@@ -38,9 +39,9 @@ export default function BlogContent({ content }: BlogContentProps) {
       <div className="flex flex-wrap gap-2 pt-4">
         <span className="font-medium">Tags:</span>
         <div className="flex flex-wrap gap-2 text-primary">
-          <a href="/blog?tag=ai" className="hover:underline">#AI</a>
-          <a href="/blog?tag=e-commerce" className="hover:underline">#E-commerce</a>
-          <a href="/blog?tag=market-intelligence" className="hover:underline">#MarketIntelligence</a>
+          <Link href="/blog?tag=ai" className="hover:underline">#AI</Link>
+          <Link href="/blog?tag=e-commerce" className="hover:underline">#E-commerce</Link>
+          <Link href="/blog?tag=market-intelligence" className="hover:underline">#MarketIntelligence</Link>
         </div>
       </div>
     </div>

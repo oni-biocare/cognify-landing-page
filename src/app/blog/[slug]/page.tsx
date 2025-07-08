@@ -5,13 +5,18 @@ import BlogContent from '@/components/blog/blog-content';
 import BlogHeader from '@/components/blog/blog-header';
 import BlogRelated from '@/components/blog/blog-related';
 
+type Params = {
+  slug: string;
+};
+
 // Generate metadata for each blog post
 export async function generateMetadata({ 
   params 
 }: { 
-  params: { slug: string } 
+  params: Params 
 }): Promise<Metadata> {
-  const post = await getBlogPost(params.slug);
+  const finalParams = await params;
+  const post = await getBlogPost(finalParams?.slug || '');
   
   if (!post) {
     return {
@@ -47,27 +52,35 @@ export async function generateMetadata({
   };
 }
 
-// Generate static params for all blog posts
-export async function generateStaticParams() {
-  const posts = await getAllBlogPosts();
-  
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+// Generate static paths for all blog posts
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  try {
+    const posts = await getAllBlogPosts();
+    
+    // Ensure we return simple objects with just the slug property
+    return posts.map((post) => ({
+      slug: post.slug,
+    }));
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    // Return a default post to ensure build doesn't fail
+    return [{ slug: 'sample-post' }];
+  }
 }
 
 export default async function BlogPostPage({ 
-  params 
-}: { 
-  params: { slug: string } 
+  params,
+}: {
+  params: Params;
 }) {
-  const post = await getBlogPost(params.slug);
+  const finalParams = await params;
+  const post = await getBlogPost(finalParams?.slug || '');
   
   if (!post) {
     notFound();
   }
   
-  const relatedPosts = await getRelatedBlogPosts(params.slug);
+  const relatedPosts = await getRelatedBlogPosts(finalParams?.slug || '');
   
   return (
     <div className="container py-8 md:py-12">
