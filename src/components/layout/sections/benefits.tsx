@@ -45,10 +45,10 @@ export const BenefitsSection = () => {
           <Badge className="text-white">Proven Results</Badge>
         </h2>
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Why Leading E-commerce Businesses Choose Cognify Metrics
+          Why You'll Lead Ecommerce Businesses Choosing Cognify Metrics
         </h2>
         <h3 className="md:w-2/3 mx-auto text-xl text-center text-muted-foreground">
-          Join over 1,000+ successful e-commerce businesses that trust our AI-powered market intelligence to drive growth and stay ahead of the competition.
+          Join over 100+ successful e-commerce businesses that trust our AI-powered market intelligence to drive growth and stay ahead of the competition.
         </h3>
       </div>
 
@@ -64,7 +64,7 @@ export const BenefitsSection = () => {
                   className="text-primary"
                 />
               </div>
-              
+
               <div className="text-3xl font-bold text-primary mb-2">{metric}</div>
               <h3 className="text-lg font-semibold mb-3">{title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
@@ -80,7 +80,7 @@ export const BenefitsSection = () => {
             <div className="text-sm text-muted-foreground">Data Algorithms</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-bold text-primary">1000+</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">100+</div>
             <div className="text-sm text-muted-foreground">User Increase</div>
           </div>
           <div className="text-center">
