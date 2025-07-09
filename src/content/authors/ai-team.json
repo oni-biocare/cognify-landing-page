@@ -1,9 +1,8 @@
 {
   "name": "AI Team",
-  "avatar": "/images/avatars/ai-team.png",
+  "avatar": "/logo.png",
   "bio": "Market Intelligence Specialists",
   "social": {
-    "twitter": "https://twitter.com/cognifymetrics",
-    "linkedin": "https://linkedin.com/company/cognify-metrics"
+
   }
 } 

@@ -21,7 +21,11 @@ export default function BlogList({ posts }: BlogListProps) {
     { id: "e-commerce", name: "E-commerce" },
     { id: "ai-trends", name: "AI Trends" },
     { id: "case-studies", name: "Case Studies" },
-    { id: "tutorials", name: "Tutorials" },
+    { id: "analytics", name: "Analytics" },
+    { id: "roi", name: "ROI" },
+    { id: "cost-savings", name: "Cost Savings" },
+    { id: "predictive-analytics", name: "Predictive Analytics" },
+    { id: "product-strategy", name: "Product Strategy" },
   ];
   
   const filteredPosts = selectedCategory === "all"

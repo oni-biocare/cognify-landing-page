@@ -32,6 +32,25 @@ export default function BlogContent({ content }: BlogContentProps) {
   
   return (
     <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
+      <style jsx global>{`
+        .prose strong {
+          font-weight: 700;
+          color: var(--foreground);
+        }
+        
+        .dark .prose strong {
+          color: white;
+        }
+        
+        .prose ol > li {
+          margin-top: 0.5em;
+          margin-bottom: 0.5em;
+        }
+        
+        .prose ol > li strong {
+          font-weight: 700;
+        }
+      `}</style>
       <div dangerouslySetInnerHTML={{ __html: content }} />
       
       <Separator className="my-12" />

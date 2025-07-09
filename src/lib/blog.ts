@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 import readingTime from 'reading-time';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/blog');
@@ -76,9 +77,10 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
       // Calculate reading time
       const stats = readingTime(matterResult.content);
       
-      // Process markdown to HTML using remark
+      // Process markdown to HTML using remark with GitHub-flavored markdown support
       const processedContent = await remark()
-        .use(html)
+        .use(remarkGfm) // Add GitHub-flavored markdown support
+        .use(html, { sanitize: false }) // Don't sanitize to allow formatting
         .process(matterResult.content);
       const contentHtml = processedContent.toString();
       
@@ -122,9 +124,10 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     // Calculate reading time
     const stats = readingTime(matterResult.content);
     
-    // Process markdown to HTML using remark
+    // Process markdown to HTML using remark with GitHub-flavored markdown support
     const processedContent = await remark()
-      .use(html)
+      .use(remarkGfm) // Add GitHub-flavored markdown support
+      .use(html, { sanitize: false }) // Don't sanitize to allow formatting
       .process(matterResult.content);
     const contentHtml = processedContent.toString();
     
