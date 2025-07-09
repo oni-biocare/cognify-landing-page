@@ -1,6 +1,6 @@
 ---
 title: "How AI-Powered Market Intelligence Can Transform Your E-commerce Business"
-date: "2025-06-1"
+date: "2025-06-01"
 excerpt: "Learn how AI market intelligence tools can help you outperform competitors, optimize pricing, and boost your e-commerce profitability."
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=800&q=80"
 author: "ai-team"

@@ -1,6 +1,6 @@
 ---
 title: "Seamless Integration: Maximizing Your E-Commerce Tech Stack with AI"
-date: "2025-07-5"
+date: "2025-07-05"
 excerpt: "Learn how integrating AI analytics with platforms like Shopify and WooCommerce creates a unified data ecosystem that eliminates silos while delivering actionable insights directly to decision-makers."
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=800&q=80"
 author: "ai-team"
