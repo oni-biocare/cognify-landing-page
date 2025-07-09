@@ -1,6 +1,6 @@
 ---
 title: "Breaking Down the ROI: Why Smart E-Commerce Brands Are Switching to AI Analytics"
-date: "2023-07-12"
+date: "2025-02-12"
 excerpt: "Discover how AI-powered analytics delivers 50% cost savings compared to legacy tools while providing superior insights through flexible pricing that scales with your business."
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=800&q=80"
 author: "ai-team"

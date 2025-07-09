@@ -1,6 +1,6 @@
 ---
 title: "Small Team, Big Results: How SMBs Can Leverage AI Analytics to Compete with Industry Giants"
-date: "2023-09-14"
+date: "2025-05-24"
 excerpt: "Discover how small-to-medium businesses can utilize AI-powered market intelligence to compete effectively against larger competitors with flexible pricing models and focused strategies."
 coverImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=800&q=80"
 author: "ai-team"
