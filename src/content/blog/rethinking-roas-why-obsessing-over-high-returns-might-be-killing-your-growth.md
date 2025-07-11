@@ -92,4 +92,4 @@ In today's increasingly competitive digital landscape, the mathematics of sustai
 
 Your competitors are likely still celebrating their high ROAS numbers while wondering why they can't break through their revenue ceiling. The question isn't whether you can afford to accept a lower ROAS—it's whether you can afford not to.
 
-Ready to transform your growth strategy with a more sophisticated approach to advertising metrics? [Contact us](/contact) to learn how Cognify Metrics can help you identify your optimal ROAS targets for sustainable scaling. 
+Exploring advanced analytics tools might help you develop a more sophisticated approach to balancing ROAS and growth. [Contact us](/contact) to discuss how tools like Cognify Metrics could potentially assist in analyzing optimal ROAS targets for your specific business model. 
