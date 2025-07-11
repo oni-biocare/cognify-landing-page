@@ -2,7 +2,7 @@
 title: "Advanced Meta Ads Scaling: Strategies for E-Commerce Dominance"
 date: "2025-07-19"
 excerpt: "Learn the methodical approach to scaling your successful Meta ad campaigns, building on smart ROAS targets, creative optimization, and solid campaign foundation."
-coverImage: "https://images.unsplash.com/photo-1616514197671-15d99ce7253f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&h=800&q=80"
+coverImage: "https://images.pexels.com/photos/6614747/pexels-photo-6614747.jpeg"
 author: "ai-team"
 categories: ["advertising", "scaling", "meta ads", "e-commerce"]
 ---
