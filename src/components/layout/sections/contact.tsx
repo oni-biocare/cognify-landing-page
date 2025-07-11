@@ -111,7 +111,7 @@ export const ContactSection = () => {
                 <Mail className="w-5 h-5 text-primary mt-1" />
                 <div className="font-semibold">Email Us</div>
               </div>
-              <div className="text-muted-foreground">hello@cognifymetrics.com</div>
+              <div className="text-muted-foreground">onibiocare@gmail.com</div>
             </div>
 
             <div>

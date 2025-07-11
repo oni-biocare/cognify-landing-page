@@ -16,12 +16,13 @@ export async function generateMetadata({
 }: { 
   params: PageParams
 }): Promise<Metadata> {
-  const slug = params?.slug || '';
+  const finalParams = await params;
+  const slug = finalParams?.slug || '';
   const post = await getBlogPost(slug);
   
   if (!post) {
     return {
-      title: 'Blog Post Not Found',
+      title: 'Blog Post Not Found', 
     };
   }
   
@@ -68,7 +69,8 @@ export async function generateStaticParams() {
 
 // Simple page function that doesn't use custom types
 export default async function Page({ params }: { params: { slug: string } }) {
-  const slug = params?.slug || '';
+  const finalParams = await params;
+  const slug = finalParams?.slug || '';
   const post = await getBlogPost(slug);
   
   if (!post) {
