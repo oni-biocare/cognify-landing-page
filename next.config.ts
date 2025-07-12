@@ -22,7 +22,8 @@ const nextConfig = {
       'localhost:3000', 
       'media.licdn.com', 
       'onibiocare.com',
-      'oni-biocare.github.io'
+      'oni-biocare.github.io',
+      'images.unsplash.com'
     ],
     remotePatterns: [
       {

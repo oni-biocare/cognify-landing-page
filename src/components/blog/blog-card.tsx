@@ -48,7 +48,7 @@ export default function BlogCard({ post }: BlogCardProps) {
           <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
         </CardContent>
         
-        <CardFooter className="px-4 py-3 pt-0 border-t flex items-center justify-between gap-2 text-xs text-muted-foreground">
+        <CardFooter className="px-4 py-2 border-t flex items-center justify-between gap-2 text-xs text-muted-foreground">
           <div className="flex items-center gap-2">
             <Image
               src={post.author.avatar}
