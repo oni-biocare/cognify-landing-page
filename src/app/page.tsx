@@ -27,7 +27,7 @@ export const metadata = {
     description: "Transform your e-commerce business with AI-powered trend analysis, keyword optimization, and predictive market intelligence. Trusted by 1000+ e-commerce businesses.",
     images: [
       {
-        url: "/hero-image-01.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Cognify Metrics - AI Market Intelligence Platform",
@@ -39,7 +39,7 @@ export const metadata = {
     site: "@CognifyMetrics",
     title: "Cognify Metrics - AI Market Intelligence for E-commerce",
     description: "Discover trending products before your competitors with AI-powered market intelligence. Join 1000+ successful e-commerce businesses.",
-    images: ["/hero-image-01.jpg"],
+    images: ["/og-image.jpg"],
   },
 };
 
