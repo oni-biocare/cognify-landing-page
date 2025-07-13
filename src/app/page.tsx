@@ -11,14 +11,18 @@ export const metadata = {
   title: "Cognify Metrics - AI-Powered Market Intelligence for E-commerce Growth",
   description: "Discover AI-powered trend analysis, keyword research, and competitive intelligence for Shopify & WooCommerce stores. Get more accuracy in trend prediction and 3x faster market insights.",
   keywords: [
-    "AI keyword research tool",
-    "Shopify keyword optimization", 
-    "e-commerce trend analysis",
-    "product keyword generator",
-    "AI market intelligence",
-    "WooCommerce SEO tools",
-    "e-commerce analytics",
-    "AI trend forecasting"
+    "AI market intelligence platform",
+    "Digital marketing intelligence software",
+    "slow trend identification",
+    "trend forecasting ai platform",
+    "competitive intelligence ai software",
+    "e-commerce trend analysis software",
+    "shopify trend detection tool",
+    "Cognify Metrics for Shopify",
+    "Shopify trend detection tool",
+    "How to predict market trends",
+    "Find early trend detection software",
+    "which ai market intelligence platform"
   ],
   openGraph: {
     type: "website",

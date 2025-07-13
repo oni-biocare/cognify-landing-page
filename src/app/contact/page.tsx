@@ -4,6 +4,34 @@ import { ContactSection } from "@/components/layout/sections/contact";
 export const metadata: Metadata = {
   title: "Contact Us - Cognify Metrics",
   description: "Get in touch with the Cognify Metrics team for questions about our AI-powered market intelligence solutions for e-commerce businesses.",
+  keywords: [
+    "AI market intelligence platform",
+    "Digital marketing intelligence software",
+    "slow trend identification",
+    "trend forecasting ai platform",
+    "competitive intelligence ai software",
+    "e-commerce trend analysis software",
+    "shopify trend detection tool",
+    "Cognify Metrics for Shopify",
+    "Shopify trend detection tool",
+    "How to predict market trends",
+    "Find early trend detection software",
+    "which ai market intelligence platform"
+  ],
+  openGraph: {
+    title: "Contact Us - Cognify Metrics",
+    description: "Get in touch with the Cognify Metrics team for questions about our AI-powered market intelligence solutions for e-commerce businesses.",
+    type: "website",
+    url: "/contact",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cognify Metrics - AI Market Intelligence Platform",
+      },
+    ],
+  },
 };
 
 export default function ContactPage() {
