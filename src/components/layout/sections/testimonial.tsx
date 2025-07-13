@@ -47,7 +47,7 @@ const reviewList: ReviewProps[] = [
     metric: "180% ↑ Organic Traffic"
   },
   {
-    image: "/images/testimonials/lisa.jpg",
+    image: "",
     name: "Lisa Thompson",
     userName: "Marketing Manager",
     company: "",

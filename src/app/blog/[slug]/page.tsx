@@ -4,6 +4,7 @@ import { getBlogPost, getAllBlogPosts, getRelatedBlogPosts } from '@/lib/blog';
 import BlogContent from '@/components/blog/blog-content';
 import BlogHeader from '@/components/blog/blog-header';
 import BlogRelated from '@/components/blog/blog-related';
+import { JsonLd } from '@/components/blog/json-ld';
 
 // Use a simple type that doesn't cause issues
 type PageParams = {
@@ -25,31 +26,86 @@ export async function generateMetadata({
       title: 'Blog Post Not Found', 
     };
   }
+
+  // Generate keywords from title, categories, and content
+  const keywords = [
+    ...post.categories,
+    ...post.title.toLowerCase().split(' ').filter(word => word.length > 3),
+    "shopify trend detection tool",
+    "Cognify Metrics for Shopify",
+    "Shopify trend detection tool",
+    "How to predict market trends",
+    "Find early trend detection software",
+    "which ai market intelligence platform",
+    'Cognify Metrics'
+  ].slice(0, 15); // Limit to 15 keywords
+
+  // Create canonical URL
+  const canonicalUrl = `https://cognifymetrics.com/blog/${post.slug}`;
   
   return {
     title: `${post.title} | Cognify Metrics Blog`,
     description: post.excerpt,
+    keywords: keywords.join(', '),
+    authors: [{ name: post.author.name, url: `https://cognifymetrics.com/author/${post.author.name.toLowerCase().replace(/\s+/g, '-')}` }],
+    creator: post.author.name,
+    publisher: 'Cognify Metrics',
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    metadataBase: new URL('https://cognifymetrics.com'),
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.date, // You might want to add a modified date field to your blog posts
       authors: [post.author.name],
-      url: `/blog/${post.slug}`,
+      url: canonicalUrl,
+      siteName: 'Cognify Metrics',
       images: [
         {
           url: post.coverImage,
           width: 1200,
           height: 630,
           alt: post.title,
+          type: 'image/jpeg',
         },
       ],
+      locale: 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
       images: [post.coverImage],
+      creator: '@cognifymetrics',
+      site: '@cognifymetrics',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'your-google-verification-code', // Add your Google Search Console verification code
+    },
+    other: {
+      'article:published_time': post.date,
+      'article:author': post.author.name,
+      'article:section': post.categories[0] || 'Digital Marketing',
+      'article:tag': post.categories.join(', '),
     },
   };
 }
@@ -80,13 +136,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const relatedPosts = await getRelatedBlogPosts(slug);
   
   return (
-    <div className="container py-8 md:py-12">
-      <article className="max-w-3xl mx-auto">
-        <BlogHeader post={post} />
-        <BlogContent content={post.content} />
-      </article>
-      
-      <BlogRelated relatedPosts={relatedPosts} />
-    </div>
+    <>
+      <JsonLd post={post} />
+      <div className="container py-8 md:py-12">
+        <article className="max-w-3xl mx-auto" itemScope itemType="https://schema.org/BlogPosting">
+          <BlogHeader post={post} />
+          <BlogContent content={post.content} categories={post.categories} />
+        </article>
+        
+        <BlogRelated relatedPosts={relatedPosts} />
+      </div>
+    </>
   );
 } 

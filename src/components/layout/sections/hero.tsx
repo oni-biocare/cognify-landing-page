@@ -35,7 +35,7 @@ export const HeroSection = () => {
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-1/4 font-bold group/arrow" asChild>
-              <a href="mailto:onibiocare@gmail.com?subject=Get Started Inquiry">
+              <a href="mailto:adsyourself.vn@gmail.com?subject=Get Started Inquiry">
                 Get Started
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </a>
@@ -46,7 +46,7 @@ export const HeroSection = () => {
               variant="secondary"
               className="w-5/6 md:w-1/4 font-bold"
             >
-              <a href="mailto:onibiocare@gmail.com?subject=Demo Request">
+              <a href="mailto:adsyourself.vn@gmail.com?subject=Demo Request">
                 Book a Demo
               </a>
             </Button>

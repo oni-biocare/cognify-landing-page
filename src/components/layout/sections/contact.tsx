@@ -55,7 +55,7 @@ export const ContactSection = () => {
     const { firstName, lastName, email, company, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:onibiocare@gmail.com?subject=${subject}&body=Hello, I am ${firstName} ${lastName} from ${company}. My Email is ${email}. %0D%0A%0D%0A${message}`;
+    const mailToLink = `mailto:adsyourself.vn@gmail.com?subject=${subject}&body=Hello, I am ${firstName} ${lastName} from ${company}. My Email is ${email}. %0D%0A%0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -82,7 +82,7 @@ export const ContactSection = () => {
           <h3 className="text-xl font-semibold mb-2">Start Free Trial</h3>
           <p className="text-muted-foreground mb-4">Get 10 free credits monthly. No credit card required.</p>
           <Button className="w-full" asChild>
-            <a href="mailto:onibiocare@gmail.com?subject=Start Free Trial Request">Start Free Trial</a>
+            <a href="mailto:adsyourself.vn@gmail.com?subject=Start Free Trial Request">Start Free Trial</a>
           </Button>
         </Card>
 
@@ -93,7 +93,7 @@ export const ContactSection = () => {
           <h3 className="text-xl font-semibold mb-2">Enterprise Solutions</h3>
           <p className="text-muted-foreground mb-4">Custom AI models and dedicated support for large businesses.</p>
           <Button variant="outline" className="w-full" asChild>
-            <a href="mailto:onibiocare@gmail.com?subject=Enterprise Solutions Inquiry">Contact Sales</a>
+            <a href="mailto:adsyourself.vn@gmail.com?subject=Enterprise Solutions Inquiry">Contact Sales</a>
           </Button>
         </Card>
       </div>
@@ -111,7 +111,7 @@ export const ContactSection = () => {
                 <Mail className="w-5 h-5 text-primary mt-1" />
                 <div className="font-semibold">Email Us</div>
               </div>
-              <div className="text-muted-foreground">onibiocare@gmail.com</div>
+              <div className="text-muted-foreground">adsyourself.vn@gmail.com</div>
             </div>
 
             <div>
