@@ -70,11 +70,11 @@ export async function generateMetadata({
       siteName: 'Cognify Metrics',
       images: [
         {
-          url: post.coverImage,
+          url: "/og-image.png",
           width: 1200,
           height: 630,
           alt: post.title,
-          type: 'image/jpeg',
+          type: 'image/png',
         },
       ],
       locale: 'en_US',
@@ -83,7 +83,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: [post.coverImage],
+      images: ["/og-image.png"],
       creator: '@cognifymetrics',
       site: '@cognifymetrics',
     },

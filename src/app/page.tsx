@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
+import Script from 'next/script';
 
 export const metadata = {
   title: "Cognify Metrics - AI-Powered Market Intelligence for E-commerce Growth",
@@ -47,9 +48,29 @@ export const metadata = {
   },
 };
 
+// Organization schema for Google search results logo
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Cognify Metrics',
+  url: 'https://cognifymetrics.com',
+  logo: 'https://cognifymetrics.com/logo.png',
+  sameAs: [
+    'https://twitter.com/cognifymetrics',
+    'https://linkedin.com/company/cognifymetrics'
+    // Add other social profiles if available
+  ]
+};
+
 export default function Home() {
   return (
     <>
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      
       <HeroSection />
       <BenefitsSection />
       <FeaturesSection />
