@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 import { BenefitsSection } from "@/components/layout/sections/benefits";
+import { DemoSection } from "@/components/layout/sections/demo";
 import Script from 'next/script';
 
 export const metadata = {
@@ -72,6 +73,7 @@ export default function Home() {
       />
       
       <HeroSection />
+      <DemoSection />
       <BenefitsSection />
       <FeaturesSection />
       <PricingSection />
