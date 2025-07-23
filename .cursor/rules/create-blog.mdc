@@ -1,0 +1,18 @@
+# Creating a Blog Post at `/blog`
+
+To create a new blog post for the site:
+
+1. **Add a Markdown file** to the [`src/content/blog/`](mdc:src/content/blog/) directory. Each file represents a blog post and should use the `.md` extension.
+2. **File Naming:** Use a descriptive, kebab-case filename (e.g., `my-new-blog-post.md`).
+3. **Frontmatter:** Each Markdown file should start with YAML frontmatter containing metadata such as `title`, `date`, `author`, `summary`, and `tags`.
+4. **Content:** Write your blog content in Markdown below the frontmatter.
+5. **Routing:** The blog system automatically generates routes for each post at `/blog/[slug]`, where `[slug]` matches the filename (without `.md`).
+6. **Components:** Blog rendering and layout are handled by components in [`src/components/blog/`](mdc:src/components/blog/). You can use custom components or Markdown syntax in your post.
+7. **Preview:** Visit `/blog` to see the blog list, and `/blog/[slug]` to view your new post.
+
+For more details, see the implementation in [`src/app/blog/`](mdc:src/app/blog/).
+-------
+description:
+globs:
+alwaysApply: false
+---
