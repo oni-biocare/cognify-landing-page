@@ -13,7 +13,7 @@ Building a successful e-commerce business isn't about having the perfect product
 
 These aren't just tips—they're foundational insights that will shape your entire approach to building a profitable online business. Whether you're just starting out or looking to scale your existing operation, these principles will serve as your North Star.
 
-## 1. E-Commerce Opportunities Are Vast, Not Oversaturated
+## 1. E-Commerce Opportunities Are Vast, Not Oversaturated 
 
 The most common objection we hear from aspiring founders is that "e-commerce is oversaturated." This couldn't be further from the truth.
 
