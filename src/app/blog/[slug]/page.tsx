@@ -31,11 +31,11 @@ export async function generateMetadata({
   const keywords = [
     ...post.categories,
     ...post.title.toLowerCase().split(' ').filter(word => word.length > 3),
-    "shopify trend detection tool",
+    "shopify trend identification tool",
     "Cognify Metrics for Shopify",
-    "Shopify trend detection tool",
-    "How to predict market trends",
-    "Find early trend detection software",
+    "Shopify trend identification tool",
+    "How to identify market trends",
+    "Find early trend identification software",
     "which ai market intelligence platform",
     'Cognify Metrics'
   ].slice(0, 15); // Limit to 15 keywords

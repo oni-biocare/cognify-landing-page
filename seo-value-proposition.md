@@ -20,7 +20,7 @@
 - **Break-even in 8-12 months** for most customers
 
 ### 3. **Smarter Product & Marketing Strategy**
-- **AI-powered trend analysis**: Detects rising trends 24-48 hours before they peak
+- **AI-powered trend identification**: Detects rising trends 24-48 hours before they peak
 - **Predictive analytics**: 30-90 day forecasts with 85%+ accuracy
 - **Competitor intelligence**: Track launches, keyword strategies, and market share
 - **Actionable recommendations**: Get specific, data-driven suggestions for product and marketing moves
@@ -34,7 +34,7 @@
 
 ## 💡 Suggested Product Strategy for Customers
 
-1. **Leverage Early Trend Detection**
+1. **Leverage Early Trend Identification**
    - Use our platform to spot emerging product and keyword trends before your competitors.
    - Focus marketing spend on high-momentum keywords for maximum ROI.
 

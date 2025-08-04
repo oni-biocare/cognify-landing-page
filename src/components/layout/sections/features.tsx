@@ -12,12 +12,12 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: TrendingUp,
-    title: "AI-Powered Trend Analysis",
-    description: "Multi-level trend detection with more accuracy across mega, macro, micro, and seasonal patterns.",
+    title: "AI-Powered Trend Identification",
+    description: "Multi-level trend identification with more accuracy across mega, macro, micro, and seasonal patterns.",
     features: [
       "Real-time monitoring with 50+ data algorithms",
-      "Predictive analytics with more accuracy", 
-      "Multi-level trend detection (mega, macro, micro, seasonal)",
+      "Trend identification with more accuracy", 
+      "Multi-level trend identification (mega, macro, micro, seasonal)",
       "Advanced pattern recognition"
     ]
   },

@@ -13,8 +13,8 @@ interface BenefitProps {
 const benefitList: BenefitProps[] = [
   {
     icon: "TrendingUp",
-    title: "Trend Prediction",
-    description: "With 50+ data algorithms, we predict market trends with industry-leading accuracy.",
+    title: "Trend Identification",
+    description: "With 50+ data algorithms, we identify market trends with industry-leading accuracy.",
     metric: "More Accuracy"
   },
   {
