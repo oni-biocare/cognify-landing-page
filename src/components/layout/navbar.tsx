@@ -147,7 +147,7 @@ export const Navbar = () => {
               <div className="flex items-center justify-between w-full mb-2">
                 <ToggleTheme />
                 <Button variant="default" asChild>
-                  <a href="mailto:adsyourself.vn@gmail.com?subject=Contact Request">Contact Us</a>
+                  <a href='https://app.cognifymetrics.com' target="_blank">Start now</a>
                 </Button>
               </div>
             </SheetFooter>
@@ -204,7 +204,7 @@ export const Navbar = () => {
 
       <div className="hidden lg:flex items-center gap-4">
         <Button variant="default" asChild>
-          <a href="mailto:adsyourself.vn@gmail.com?subject=Contact Request">Contact Us</a>
+          <a href='https://app.cognifymetrics.com' target="_blank">Start now</a>
         </Button>
         <ToggleTheme />
       </div>

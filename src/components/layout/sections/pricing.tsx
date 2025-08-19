@@ -187,7 +187,7 @@ export const PricingSection = () => {
                   size="sm"
                   asChild
                 >
-                  <a href={`mailto:adsyourself.vn@gmail.com?subject=${title} Plan Inquiry`}>{buttonText}</a>
+                  <a href='https://app.cognifymetrics.com' target="_blank">{buttonText}</a>
                 </Button>
               </CardFooter>
             </Card>

@@ -251,4 +251,4 @@ The global market intelligence software market is projected to grow from $3.6B i
 
 ---
 
-*Ready to get started? [Start your free trial today](#) and see the difference AI-powered market intelligence can make for your business decisions.*
+*Ready to get started? [Start your free trial today](https://app.cognifymetrics.com) and see the difference AI-powered market intelligence can make for your business decisions.*

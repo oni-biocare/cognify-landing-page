@@ -82,7 +82,7 @@ export const ContactSection = () => {
           <h3 className="text-xl font-semibold mb-2">Start Free Trial</h3>
           <p className="text-muted-foreground mb-4">Get 10 free credits monthly. No credit card required.</p>
           <Button className="w-full" asChild>
-            <a href="mailto:adsyourself.vn@gmail.com?subject=Start Free Trial Request">Start Free Trial</a>
+            <a href='https://app.cognifymetrics.com' target="_blank" >Start Free Trial</a>
           </Button>
         </Card>
 
