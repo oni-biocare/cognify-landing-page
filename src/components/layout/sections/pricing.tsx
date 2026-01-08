@@ -54,7 +54,6 @@ const plans: PlanProps[] = [
       "Up to 1,000 documents indexed",
       "10,000 queries / 30 days",
       "Unanswered questions queue + thumbs up/down feedback",
-      "Draft → Publish knowledge workflow",
       "Micro-quizzes (MCQ/True-False) for up to 10 topics",
       "Email support (48h SLA)",
       "Overage: $10 per 1,000 queries",
