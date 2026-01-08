@@ -29,32 +29,54 @@ const plans: PlanProps[] = [
     title: "Free",
     popular: 0,
     price: 0,
-    description: "Perfect for testing our AI-powered market intelligence capabilities.",
+    description:
+      "Validate the workflow with a small team. Source-cited answers + feedback to improve your knowledge base.",
     buttonText: "Start Free Trial",
     benefitList: [
-      "10 credits per month for 3 months",
-      "Basic product keyword analysis (limited to core keywords)",
-      "Simple trend identification",
-      "Limited search volume and competition data",
-      "Basic optimization recommendations",
-      "No PDF export"
+      "Up to 15 users / 30 days",
+      "Up to 20 documents indexed",
+      "300 queries / 30 days",
+      "Source-cited answers + open-document links",
+      "Basic admin dashboard (top topics + feedback)",
+      "7-day chat history retention",
     ],
   },
   {
-    title: "Starter",
+    title: "Pilot",
     popular: 1,
-    price: 49.99,
-    description: "Ideal for small e-commerce businesses ready to leverage AI insights.",
-    buttonText: "Get Started",
+    price: 999,
+    description:
+      "Prove ROI in 2–4 weeks for onboarding or SOP Q&A. Built to reduce repetitive questions and close knowledge gaps fast.",
+    buttonText: "Start Pilot",
     benefitList: [
-      "100 credits per month",
       "Free tier +",
-      "Full product keyword analysis with detailed metrics",
-      "Analysis for up to 5 products per month",
-      "Advanced keyword relevance scoring",
-      "Basic content optimization recommendation",
-      "Industry trend analysis (mega, macro, micro trends)",
-      "Daily industry landscaping"
+      "Up to 250 users / 30 days",
+      "Up to 1,000 documents indexed",
+      "10,000 queries / 30 days",
+      "Unanswered questions queue + thumbs up/down feedback",
+      "Draft → Publish knowledge workflow",
+      "Micro-quizzes (MCQ/True-False) for up to 10 topics",
+      "Email support (48h SLA)",
+      "Overage: $10 per 1,000 queries",
+    ],
+  },
+  {
+    title: "Enterprise",
+    popular: 0,
+    price: -1,
+    description:
+      "Enterprise governance, security, and scale. Includes custom deployment options (SaaS, VPC, or On-Prem).",
+    buttonText: "Book a Demo",
+    benefitList: [
+      "Pilot +",
+      "Unlimited users (usage-based)",
+      "Up to 10,000 documents indexed",
+      "Up to 100,000 queries / 30 days",
+      "SSO (SAML/OIDC) + SCIM provisioning",
+      "Role-based access control + audit logs",
+      "Advanced analytics (adoption, answer rate, CSAT, knowledge gaps)",
+      "Custom integrations (Slack/Teams, HRIS, ticketing) — scoped access",
+      "SaaS dedicated environment or On-Prem / Private Cloud (custom pricing)",
     ],
   },
   // {
@@ -122,16 +144,15 @@ export const PricingSection = () => {
         Start your AI-powered market intelligence journey today. Test our platform for free, then upgrade to unlock the full potential of your e-commerce business.
       </h3>
 
-      <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-2xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-4xl mx-auto">
         {plans.map(
           ({ title, popular, price, description, buttonText, benefitList }) => (
             <Card
               key={title}
-              className={`h-full flex flex-col ${
-                popular === PopularPlan?.YES
-                  ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary relative"
-                  : "border-border"
-              }`}
+              className={`h-full flex flex-col ${popular === PopularPlan?.YES
+                ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10 border-[1.5px] border-primary relative"
+                : "border-border"
+                }`}
             >
               {popular === PopularPlan?.YES && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -140,7 +161,7 @@ export const PricingSection = () => {
                   </Badge>
                 </div>
               )}
-              
+
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-lg mb-2">{title}</CardTitle>
                 <CardDescription className="text-sm mb-4 min-h-[40px]">
@@ -150,13 +171,23 @@ export const PricingSection = () => {
                 <div className="flex flex-col items-center justify-center gap-1">
                   {typeof price === 'number' ? (
                     <>
-                      <div className="flex items-baseline">
-                        <span className="text-3xl font-bold">${price}</span>
-                        <span className="text-muted-foreground ml-1">/month</span>
-                      </div>
-                      {title === "Starter" && (
+                      {
+                        price === -1 ? (
+                          <div className="flex flex-col items-center text-xs">
+                            <Button variant="outline" className="w-full" asChild>
+                              <a href="mailto:adsyourself.vn@gmail.com?subject=Enterprise Solutions Inquiry">Contact Sales</a>
+                            </Button>
+                          </div>
+                        ) : (
+                          <div className="flex items-baseline">
+                            <span className="text-3xl font-bold">${price}</span>
+                            <span className="text-muted-foreground ml-1">/month</span>
+                          </div>
+                        )
+                      }
+                      {title === "Pilot" && (
                         <div className="flex flex-col items-center text-xs">
-                          <span className="text-muted-foreground">or $499/year (save 17%)</span>
+                          <span className="text-muted-foreground">or $10000/year (save 17%)</span>
                           <span className="text-green-500 font-medium">10% discount on additional credits</span>
                         </div>
                       )}
@@ -213,14 +244,14 @@ export const PricingSection = () => {
               <span>Data security & privacy</span>
             </div>
           </div>
-          <p className="mt-8 text-sm text-muted-foreground">
+          {/* <p className="mt-8 text-sm text-muted-foreground">
             All prices in USD. Cancel anytime.
-          </p>
-          <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
+          </p> */}
+          {/* <div className="mt-6 p-4 bg-muted/50 rounded-lg border border-border">
             <p className="text-sm text-muted-foreground text-center">
               <strong>Coming Soon:</strong> Growth, Professional, and Enterprise plans with advanced features, unlimited credits, and priority support.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -67,11 +67,10 @@ export const ContactSection = () => {
           <Badge className="text-white">Get Started</Badge>
         </h2>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Ready to Transform Your E-commerce Business?
+          Ready to Transform How Your Team Learns and Works?
         </h2>
         <p className="md:w-2/3 mx-auto text-xl text-muted-foreground">
-          Join thousands of successful e-commerce businesses using AI-powered market intelligence to drive growth. Start free today and transform your e-commerce strategy.
-        </p>
+          Turn scattered documents into trusted answers. Launch a pilot in weeks, reduce repetitive questions, and gain clear visibility into knowledge gaps—without disrupting your existing workflows.        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -79,8 +78,8 @@ export const ContactSection = () => {
           <div className="bg-primary/10 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
             <MessageCircle className="w-8 h-8 text-primary" />
           </div>
-          <h3 className="text-xl font-semibold mb-2">Start Free Trial</h3>
-          <p className="text-muted-foreground mb-4">Get 10 free credits monthly. No credit card required.</p>
+          <h3 className="text-xl font-semibold mb-2">Start a Pilot</h3>
+          <p className="text-muted-foreground mb-4">Launch quickly with a small team. Upload your core documents and see real usage, feedback, and time saved—no credit card required.</p>
           <Button className="w-full" asChild>
             <a href='https://app.cognifymetrics.com' target="_blank" >Start Free Trial</a>
           </Button>
@@ -90,8 +89,8 @@ export const ContactSection = () => {
           <div className="bg-primary/10 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
             <BookOpen className="w-8 h-8 text-primary" />
           </div>
-          <h3 className="text-xl font-semibold mb-2">Enterprise Solutions</h3>
-          <p className="text-muted-foreground mb-4">Custom AI models and dedicated support for large businesses.</p>
+          <h3 className="text-xl font-semibold mb-2">Enterprise & On-Prem Solutions</h3>
+          <p className="text-muted-foreground mb-4">Deploy at scale with advanced security, SSO, governance, and on-prem or private cloud options tailored to your compliance needs.</p>
           <Button variant="outline" className="w-full" asChild>
             <a href="mailto:adsyourself.vn@gmail.com?subject=Enterprise Solutions Inquiry">Contact Sales</a>
           </Button>
@@ -102,7 +101,7 @@ export const ContactSection = () => {
         <div>
           <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
           <p className="mb-8 text-muted-foreground text-lg">
-            Have questions about how AI-powered market intelligence can help your business? Our team of e-commerce experts is here to help.
+          Have questions about how AI-powered training can help your team? Our team of experts is here to help.
           </p>
 
           <div className="flex flex-col gap-6">

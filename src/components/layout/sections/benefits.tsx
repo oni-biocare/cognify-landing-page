@@ -12,28 +12,28 @@ interface BenefitProps {
 
 const benefitList: BenefitProps[] = [
   {
-    icon: "TrendingUp",
-    title: "Trend Identification",
-    description: "With 50+ data algorithms, we identify market trends with industry-leading accuracy.",
-    metric: "More Accuracy"
+    icon: "Repeat",
+    title: "Same questions, daily",
+    description: "Senior staff keep answering identical policy and product questions, interrupting deep work and scaling onboarding costs as your team grows.",
+    metric: "Repeat Work"
   },
   {
-    icon: "Zap",
-    title: "3x Faster Trend Identification",
-    description: "Identify emerging trends weeks before competitors, giving you the first-mover advantage in your market.",
-    metric: "3x Faster"
+    icon: "BookX",
+    title: "Docs everywhere, no clarity",
+    description: "Policies, manuals, and FAQs are spread across PDFs, drives, and wikis—employees can’t find the latest source, so answers vary by who you ask.",
+    metric: "Lost Knowledge"
   },
   {
-    icon: "Target",
-    title: "40-60% Better Keyword Targeting",
-    description: "AI-generated keywords deliver superior targeting precision compared to traditional research methods.",
-    metric: "40-60% Better"
+    icon: "EyeOff",
+    title: "No learning visibility",
+    description: "You can’t see what employees search for, what they misunderstand, or which topics fail in practice—so training improvements are guesswork, not data-driven",
+    metric: "Blind Spots"
   },
   {
-    icon: "Users",
-    title: "4.7/5 User Satisfaction",
-    description: "Beta users consistently rate our platform highly for accuracy, ease of use, and business impact.",
-    metric: "4.7/5 Rating"
+    icon: "UserPlus",
+    title: "Time-to-productivity drags",
+    description: "New hires take longer to ramp because learning is passive and fragmented, and support depends on someone being available to help.",
+    metric: "Slow Onboarding"
   }
 ];
 
@@ -42,13 +42,13 @@ export const BenefitsSection = () => {
     <section className="container py-24 sm:py-32">
       <div className="text-center mb-16">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          <Badge className="text-white">Proven Results</Badge>
+          <Badge className="text-white">Your Problems</Badge>
         </h2>
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Why You'll Lead Ecommerce Businesses Choosing Cognify Metrics
+        You’re likely dealing with these training problem
         </h2>
         <h3 className="md:w-2/3 mx-auto text-xl text-center text-muted-foreground">
-          Join over 100+ successful e-commerce businesses that trust our AI-powered market intelligence to drive growth and stay ahead of the competition.
+        When knowledge lives in scattered documents and onboarding depends on humans repeating answers, training becomes slow, inconsistent, and impossible to measure.
         </h3>
       </div>
 
@@ -73,7 +73,7 @@ export const BenefitsSection = () => {
         ))}
       </div>
 
-      <div className="mt-16 text-center">
+      {/* <div className="mt-16 text-center">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-primary">50+</div>
@@ -92,7 +92,7 @@ export const BenefitsSection = () => {
             <div className="text-sm text-muted-foreground">Time Saved</div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

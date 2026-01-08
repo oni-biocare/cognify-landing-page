@@ -15,27 +15,27 @@ export const HeroSection = () => {
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">
-              <Badge className="text-white">Lead the Market</Badge>
+              <Badge className="text-white">Instant Answers</Badge>
             </span>
-            <span>with AI-Powered Foresight</span>
+            <span>Measurable Learning</span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-            Faster path to 
+            Train employees faster with 
               <span className="text-transparent px-2 bg-gradient-to-r from-[#ee9ca7] to-primary bg-clip-text">
-               Market Mastery
-              </span><br/>
+              an AI-powered training chatbot
+              </span><br />
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`We believe cutting-edge market intelligence should be accessible, actionable, and built for those who dare to lead.`}
+            {`Sourced Q&A from your internal docs, automated quizzes, and learning analytics for leader`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-1/4 font-bold group/arrow" asChild>
-              <a  href='https://app.cognifymetrics.com' target="_blank">
+              <a href='https://app.cognifymetrics.com' target="_blank">
                 Get Started
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </a>
@@ -66,7 +66,7 @@ export const HeroSection = () => {
             }
             alt="dashboard"
           /> */}
-           <ModalVideo
+          <ModalVideo
             thumb="/hero-image-01.jpg"
             thumbWidth={1104}
             thumbHeight={576}

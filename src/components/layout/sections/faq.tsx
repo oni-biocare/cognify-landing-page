@@ -14,43 +14,51 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "How does the AI technology work and what makes it so accurate?",
-    answer: "Our AI uses advanced machine learning algorithms to analyze over data sources including social media, search trends, news, and competitor activities. The system employs natural language processing and pattern recognition to identify emerging trends with more accuracy. Our models are continuously trained on new data to improve predictions and adapt to market changes.",
+    question: "Who is this product for?",
+    answer:
+      "It’s built for mid-market and enterprise teams that need faster onboarding and consistent internal knowledge—especially HR, Operations, Customer Support, Sales Enablement, and Product teams.",
     value: "item-1",
   },
   {
-    question: "Is my business data secure and private?",
-    answer: "Absolutely. We implement enterprise-grade security measures including end-to-end encryption, secure API connections, and SOC 2 compliance. Your business data is never shared with third parties, and we follow strict GDPR and data privacy regulations. All integrations use secure, read-only access to protect your sensitive information.",
+    question: "What problem does it solve?",
+    answer:
+      "It reduces repetitive internal questions, helps employees find the right policy or SOP in seconds, and gives leaders visibility into knowledge gaps—so training becomes measurable and continuously improved.",
     value: "item-2",
   },
   {
-    question: "How does the credit system work and what counts as a credit?",
-    answer: "Credits are used for AI-powered analyses like trend searches, keyword generation, and competitive intelligence reports. You can always upgrade if you need more credits.",
+    question: "How is this different from a traditional LMS?",
+    answer:
+      "An LMS is course-first. This is question-first: employees ask in natural language and get source-cited answers instantly. You can still run lightweight quizzes, but the core value is fast, trusted retrieval during daily work.",
     value: "item-3",
   },
   {
-    question: "What kind of return on investment can I expect?",
-    answer: "Our users typically see ROI within 30-60 days. Common results include 45% increase in organic traffic, 60% time savings on market research, and 3x faster trend identification. Many customers report avoiding costly inventory mistakes and capturing new market opportunities worth thousands of dollars. Your specific ROI depends on how you implement our insights.",
+    question: "How do you ensure answers are accurate and trustworthy?",
+    answer:
+      "Every response is grounded in your uploaded documents and includes citations with links to the exact section. If the system can’t find reliable evidence, it responds safely instead of guessing.",
     value: "item-4",
   },
   {
-    question: "Do you integrate with Shopify, WooCommerce, and other e-commerce platforms?",
-    answer: "Yes! We offer seamless integration with Shopify and WooCommerce, BigCommerce, Magento are on the way. Our integrations provide automated inventory-based insights, product performance analysis (if you allow it), alerts specific to your catalog. Setup takes just a few minutes with our easy-to-follow guides.",
+    question: "What types of content can we upload?",
+    answer:
+      "You can upload common internal formats such as PDFs, DOCX, PPTX, and HTML pages. You can organize content by topic (e.g., onboarding, HR policies, SOPs, product knowledge).",
     value: "item-5",
   },
   {
-    question: "What kind of support do you provide?",
-    answer: "Support varies by plan: Free users get email support, Starter/Growth plans include priority email support, Professional plans get dedicated account management plus phone/chat support, and Enterprise customers receive 24/7 premium support with guaranteed response times. Enterprise plan include comprehensive documentation and video tutorials.",
+    question: "Does it support multiple departments or workspaces?",
+    answer:
+      "Yes. You can separate knowledge by department or topic and control who can access what. Enterprise adds stronger governance with role-based access controls and provisioning.",
     value: "item-6",
   },
   {
-    question: "Can I cancel anytime?",
-    answer: "Yes, you can cancel your subscription anytime with no cancellation fees. When you cancel but still have credits, you can use them until they expire. Your data remains accessible during the cancellation period, and you can always reactivate your account later.",
+    question: "Can we control access to sensitive information?",
+    answer:
+      "Yes. Access is permission-based so employees only see what they’re allowed to see. Enterprise supports SSO (SAML/OIDC) and advanced role-based access controls for stricter governance.",
     value: "item-7",
   },
   {
-    question: "How is this different from other market research tools?",
-    answer: "We and you grow together, what you need is what we do. We're specifically designed for e-commerce with seamless platform integrations, real-time alerts, and actionable insights. Our AI-generated keywords and competitive intelligence go beyond basic research to provide strategic advantages your competitors don't have.",
+    question: "Is our data used to train public AI models?",
+    answer:
+      "No. Your documents and conversations remain private to your workspace. The system is designed for enterprise use where confidentiality and data protection are mandatory.",
     value: "item-8",
   },
 ];
@@ -68,7 +76,7 @@ export const FAQSection = () => {
         </h2>
 
         <p className="text-muted-foreground text-center mb-8">
-          Get answers to common questions about our AI-powered market intelligence platform
+          Get answers to common questions about our AI-powered training platform
         </p>
       </div>
 

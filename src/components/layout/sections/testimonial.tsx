@@ -30,57 +30,53 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "",
-    name: "Sarah Chen",
-    userName: "E-commerce Director",
+    name: "Sarah Thompson",
+    userName: "Head of People & Culture",
     company: "",
-    comment: "Cognify Metrics helped us identify the smartwatch trend 3 weeks before our competitors. We launched early and captured 60% more market share. The ROI was incredible - $200K additional revenue in just 2 months.",
-    rating: 5.0,
-    metric: "60% ↑ Market Share"
+    comment:
+      "We reduced repetitive onboarding questions almost immediately. New hires now trust the answers because every response links back to the policy source.",
+    rating: 5,
+    metric: "42% fewer HR questions in 30 days",
   },
   {
     image: "",
-    name: "Marcus Rodriguez",
-    userName: "Founder & CEO",
+    name: "Daniel Wong",
+    userName: "Operations Manager",
     company: "",
-    comment: "The AI keyword suggestions transformed our SEO strategy. We went from page 3 to ranking #1 for our target keywords in just 6 weeks. Our organic traffic increased by 180% and conversion rates doubled.",
-    rating: 5.0,
-    metric: "180% ↑ Organic Traffic"
+    comment:
+      "The unanswered questions dashboard showed us exactly where our SOPs were unclear. Fixing those gaps saved hours every week for our ops team.",
+    rating: 5,
+    metric: "3× faster SOP clarification",
   },
   {
     image: "",
-    name: "Lisa Thompson",
-    userName: "Marketing Manager",
+    name: "Emily Carter",
+    userName: "Customer Support Lead",
     company: "",
-    comment: "The predictive analytics saved us from a costly mistake. Cognify Metrics predicted a decline in our top product category 2 months before it happened. We pivoted our inventory and maintained profitability while competitors struggled.",
-    rating: 4.9,
-    metric: "Avoided $50K Loss"
+    comment:
+      "Support agents ramp up faster because they can ask the bot instead of waiting for seniors. The source citations make training much more reliable.",
+    rating: 4,
+    metric: "35% faster agent onboarding",
   },
   {
     image: "",
-    name: "David Kim",
-    userName: "Growth Strategist", 
+    name: "Michael Nguyen",
+    userName: "IT & Security Director",
     company: "",
-    comment: "As a Shopify store, the integration was seamless. The real-time alerts helped us capitalize on viral pet product trends. Our best month ever was directly attributed to acting on Cognify Metrics's trend predictions.",
-    rating: 5.0,
-    metric: "Record Sales Month"
+    comment:
+      "We needed strict access control and audit logs. The enterprise setup gave us confidence to roll this out across multiple departments.",
+    rating: 5,
+    metric: "Enterprise-ready security & governance",
   },
   {
     image: "",
-    name: "Emma Wilson",
-    userName: "Digital Marketing Lead",
+    name: "Laura Martinez",
+    userName: "Learning & Development Manager",
     company: "",
-    comment: "The competitive intelligence feature is game-changing. We discovered gaps in our competitors' keyword strategies and filled them. Our market position improved dramatically, and we're now the go-to brand in our niche.",
-    rating: 4.8,
-    metric: "Market Leader Position"
-  },
-  {
-    image: "",
-    name: "Alex Johnson",
-    userName: "Product Manager",
-    company: "",
-    comment: "The time saved on market research is incredible. What used to take our team 2 weeks now takes 2 hours with Cognify Metrics. We're launching products faster and with better market fit than ever before.",
-    rating: 5.0,
-    metric: "90% Time Reduction"
+    comment:
+      "Micro-quizzes inside chat changed how employees retain policies. We finally have data to prove what training content actually works.",
+    rating: 5,
+    metric: "60% improvement in knowledge retention",
   },
 ];
 
@@ -93,12 +89,11 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Real Results from Real E-commerce Businesses
+        Real Results from Real Teams
         </h2>
 
         <p className="md:w-2/3 mx-auto text-xl text-center text-muted-foreground mb-8">
-          See how leading e-commerce businesses are using AI-powered market intelligence to drive growth, increase revenue, and stay ahead of the competition.
-        </p>
+        See how mid-market and enterprise teams reduce repetitive questions, speed up onboarding, and improve policy confidence with source-cited answers and measurable learning insights.        </p>
       </div>
 
       <Carousel
@@ -164,23 +159,23 @@ export const TestimonialSection = () => {
       {/* Success metrics summary */}
       <div className="mt-16 text-center">
         <div className="bg-primary/5 border-2 border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto">
-          <h3 className="text-2xl font-bold mb-6">Proven Results Across Industries</h3>
+          <h3 className="text-2xl font-bold mb-6">Proven Results from Internal Knowledge Rollouts</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">4.7/5</div>
-              <div className="text-sm text-muted-foreground">Average Rating</div>
+              <div className="text-sm text-muted-foreground">Admin Satisfaction</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">45%</div>
-              <div className="text-sm text-muted-foreground">Avg. Traffic Increase</div>
+              <div className="text-sm text-muted-foreground">Fewer Repetitive Questions</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">3x</div>
-              <div className="text-sm text-muted-foreground">Faster Insights</div>
+              <div className="text-sm text-muted-foreground">Faster Time-to-Answer</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-2">60%</div>
-              <div className="text-sm text-muted-foreground">Time Saved</div>
+              <div className="text-sm text-muted-foreground">Time Saved for HR/Ops</div>
             </div>
           </div>
         </div>

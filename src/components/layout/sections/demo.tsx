@@ -44,7 +44,7 @@ export function DemoSection() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">
-            See Cognify Metrics in Action
+          Most training bots fail for one reason: the knowledge base isn’t governed. <br/> Here’s how we fix it.
           </h2>
           <p className="text-muted-foreground text-lg md:text-xl max-w-[800px]">
             Explore our powerful AI-driven analytics platform that helps e-commerce businesses 

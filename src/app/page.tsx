@@ -10,44 +10,51 @@ import { DemoSection } from "@/components/layout/sections/demo";
 import Script from 'next/script';
 
 export const metadata = {
-  title: "Cognify Metrics - AI-Powered Market Intelligence for E-commerce Growth",
-  description: "Discover AI-powered trend analysis, keyword research, and competitive intelligence for Shopify & WooCommerce stores. Get more accuracy in trend prediction and 3x faster market insights.",
+  title: "CognifyMetrics | AI-Powered Insights, Metrics, and Decision Intelligence",
+  description:
+    "CognifyMetrics helps teams turn scattered data into clear insights. Analyze performance, track meaningful metrics, and surface actionable recommendations with AI—faster decisions, measurable outcomes.",
   keywords: [
-    "AI market intelligence platform",
-    "Digital marketing intelligence software",
-    "slow trend identification",
-    "trend forecasting ai platform",
-    "competitive intelligence ai software",
-    "e-commerce trend analysis software",
-    "shopify trend detection tool",
-    "Cognify Metrics for Shopify",
-    "Shopify trend detection tool",
-    "How to predict market trends",
-    "Find early trend detection software",
-    "which ai market intelligence platform"
+    "CognifyMetrics",
+    "AI analytics",
+    "decision intelligence",
+    "business intelligence",
+    "product analytics",
+    "performance metrics",
+    "insight platform",
+    "data analytics",
+    "AI insights",
+    "KPI dashboard",
+    "metrics tracking",
+    "growth analytics",
+    "predictive analytics",
+    "data-driven decision making",
+    "enterprise analytics",
+    "SaaS analytics",
   ],
   openGraph: {
     type: "website",
     url: "https://cognifymetrics.com",
-    title: "Cognify Metrics - AI-Powered Market Intelligence for E-commerce",
-    description: "Transform your e-commerce business with AI-powered trend analysis, keyword optimization, and predictive market intelligence. Trusted by 1000+ e-commerce businesses.",
+    title: "CognifyMetrics | AI-Powered Insights, Metrics, and Decision Intelligence",
+    description:
+      "Turn scattered data into clear insights. Track metrics that matter and get AI-powered recommendations to move faster with confidence.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cognify Metrics - AI Market Intelligence Platform",
+        alt: "CognifyMetrics – AI-powered insights and metrics dashboard",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@CognifyMetrics",
-    title: "Cognify Metrics - AI Market Intelligence for E-commerce",
-    description: "Discover trending products before your competitors with AI-powered market intelligence. Join 1000+ successful e-commerce businesses.",
+    title: "CognifyMetrics | AI-Powered Insights and Metrics",
+    description:
+      "Analyze performance, track KPIs, and uncover actionable recommendations with AI—built for modern teams.",
     images: ["/og-image.png"],
   },
-};
+};;
 
 // Organization schema for Google search results logo
 const organizationSchema = {
@@ -73,7 +80,7 @@ export default function Home() {
       />
       
       <HeroSection />
-      <DemoSection />
+      {/* <DemoSection /> */}
       <BenefitsSection />
       <FeaturesSection />
       <PricingSection />
