@@ -31,13 +31,21 @@ export async function generateMetadata({
   const keywords = [
     ...post.categories,
     ...post.title.toLowerCase().split(' ').filter(word => word.length > 3),
-    "shopify trend identification tool",
-    "Cognify Metrics for Shopify",
-    "Shopify trend identification tool",
-    "How to identify market trends",
-    "Find early trend identification software",
-    "which ai market intelligence platform",
-    'Cognify Metrics'
+   "AI internal knowledge platform",
+    "enterprise knowledge management",
+    "internal chatbot for employees",
+    "AI onboarding software",
+    "employee training AI",
+    "SOP knowledge base",
+    "policy training software",
+    "AI knowledge assistant",
+    "corporate learning platform",
+    "internal documentation search",
+    "secure enterprise AI",
+    "on-prem AI chatbot",
+    "knowledge gap analytics",
+    "AI-powered onboarding",
+    "CognifyMetrics internal knowledge",
   ].slice(0, 15); // Limit to 15 keywords
 
   // Create canonical URL

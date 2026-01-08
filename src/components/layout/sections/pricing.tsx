@@ -79,54 +79,6 @@ const plans: PlanProps[] = [
       "SaaS dedicated environment or On-Prem / Private Cloud (custom pricing)",
     ],
   },
-  // {
-  //   title: "Growth",
-  //   popular: 0,
-  //   price: 149,
-  //   description: "Perfect for growing businesses that need advanced AI insights and analytics.",
-  //   buttonText: "Choose Growth",
-  //   benefitList: [
-  //     "500 credits per month",
-  //     "Advanced AI insights",
-  //     "Multi-platform integration",
-  //     "Predictive analytics dashboard",
-  //     "Priority support",
-  //     "Custom reporting",
-  //     "API access (limited)"
-  //   ],
-  // },
-  // {
-  //   title: "Professional",
-  //   popular: 0,
-  //   price: 349,
-  //   description: "For agencies and larger businesses requiring comprehensive market intelligence.",
-  //   buttonText: "Go Professional",
-  //   benefitList: [
-  //     "2,000 credits per month",
-  //     "White-label reports",
-  //     "Full API access",
-  //     "Advanced competitive intelligence",
-  //     "Custom AI model training",
-  //     "Dedicated account manager",
-  //     "Phone & chat support"
-  //   ],
-  // },
-  // {
-  //   title: "Enterprise",
-  //   popular: 0,
-  //   price: "Custom",
-  //   description: "Tailored solutions for large enterprises with unlimited AI-powered insights.",
-  //   buttonText: "Contact Sales",
-  //   benefitList: [
-  //     "Unlimited credits",
-  //     "Custom AI model training",
-  //     "Dedicated infrastructure",
-  //     "SLA guarantees",
-  //     "Custom integrations",
-  //     "24/7 premium support",
-  //     "Onboarding & training"
-  //   ],
-  // },
 ];
 
 export const PricingSection = () => {
