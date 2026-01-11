@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
-import BlogList from '@/components/blog/blog-list';
-import BlogHero from '@/components/blog/blog-hero';
+import BlogContainer from "@/app/blog/blog-container";
 
 export const metadata: Metadata = {
   title: "CognifyMetrics – AI-Powered Internal Knowledge & Training Platform",
@@ -60,8 +59,7 @@ export default async function BlogPage() {
 
   return (
     <div className="container py-8 md:py-12">
-      <BlogHero />
-      <BlogList posts={posts} />
+      <BlogContainer posts={posts} />
     </div>
   );
 } 

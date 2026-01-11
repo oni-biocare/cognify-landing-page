@@ -43,9 +43,9 @@ export async function getAuthor(authorSlug: string): Promise<Author> {
   } catch (error) {
     // If no author file exists, return default author
     return {
-      name: 'AI Team',
+      name: 'AI Improvement Team',
       avatar: '/images/avatars/default.png',
-      bio: 'Market Intelligence Specialist',
+      bio: 'AI Improvement Specialists',
     };
   }
 }

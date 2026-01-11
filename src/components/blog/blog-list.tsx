@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BlogPost } from "@/lib/blog";
 import BlogCard from "@/components/blog/blog-card";
 import { Badge } from "@/components/ui/badge";
@@ -9,12 +9,17 @@ import { ChevronDown } from "lucide-react";
 
 interface BlogListProps {
   posts: BlogPost[];
+  selectedCategory: string;
+  onCategoryChange: (category: string) => void;
 }
 
-export default function BlogList({ posts }: BlogListProps) {
+export default function BlogList({ posts, selectedCategory, onCategoryChange }: BlogListProps) {
   const [visiblePosts, setVisiblePosts] = useState(6);
-  const [selectedCategory, setSelectedCategory] = useState("all");
-  
+
+  useEffect(() => {
+    setVisiblePosts(6);
+  }, [selectedCategory, posts]);
+
   const categories = [
     { id: "all", name: "All Posts" },
     { id: "market-intelligence", name: "Market Intelligence" },
@@ -27,18 +32,14 @@ export default function BlogList({ posts }: BlogListProps) {
     { id: "predictive-analytics", name: "Predictive Analytics" },
     { id: "product-strategy", name: "Product Strategy" },
   ];
-  
-  const filteredPosts = selectedCategory === "all"
-    ? posts
-    : posts.filter(post => post.categories.includes(selectedCategory));
-  
-  const displayedPosts = filteredPosts.slice(0, visiblePosts);
-  const hasMorePosts = filteredPosts.length > visiblePosts;
-  
+
+  const displayedPosts = posts.slice(0, visiblePosts);
+  const hasMorePosts = posts.length > visiblePosts;
+
   const loadMore = () => {
-    setVisiblePosts(prev => prev + 6);
+    setVisiblePosts((prev) => prev + 6);
   };
-  
+
   return (
     <section className="py-8">
       <div className="flex flex-wrap gap-2 mb-8 justify-center">
@@ -47,16 +48,16 @@ export default function BlogList({ posts }: BlogListProps) {
             key={category.id}
             variant={selectedCategory === category.id ? "default" : "outline"}
             className="cursor-pointer px-4 py-2 text-sm"
-            onClick={() => setSelectedCategory(category.id)}
+            onClick={() => onCategoryChange(category.id)}
           >
             {category.name}
           </Badge>
         ))}
       </div>
-      
-      {filteredPosts.length === 0 ? (
+
+      {posts.length === 0 ? (
         <div className="text-center py-12">
-          <p className="text-muted-foreground">No posts found in this category.</p>
+          <p className="text-muted-foreground">No posts found.</p>
         </div>
       ) : (
         <>
@@ -65,7 +66,7 @@ export default function BlogList({ posts }: BlogListProps) {
               <BlogCard key={post.slug} post={post} />
             ))}
           </div>
-          
+
           {hasMorePosts && (
             <div className="flex justify-center mt-8">
               <Button onClick={loadMore} variant="outline" className="gap-2">
@@ -77,4 +78,4 @@ export default function BlogList({ posts }: BlogListProps) {
       )}
     </section>
   );
-} 
+}
