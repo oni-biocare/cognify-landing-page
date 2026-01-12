@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Suspense } from "react";
 import { getAllBlogPosts } from '@/lib/blog';
 import BlogContainer from "@/app/blog/blog-container";
 
@@ -59,7 +60,9 @@ export default async function BlogPage() {
 
   return (
     <div className="container py-8 md:py-12">
-      <BlogContainer posts={posts} />
+      <Suspense fallback={<div className="py-8 text-center text-muted-foreground">Loading…</div>}>
+        <BlogContainer posts={posts} />
+      </Suspense>
     </div>
   );
 } 
