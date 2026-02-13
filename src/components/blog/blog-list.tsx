@@ -22,15 +22,14 @@ export default function BlogList({ posts, selectedCategory, onCategoryChange }: 
 
   const categories = [
     { id: "all", name: "All Posts" },
-    { id: "market-intelligence", name: "Market Intelligence" },
-    { id: "e-commerce", name: "E-commerce" },
-    { id: "ai-trends", name: "AI Trends" },
+    { id: "internal-knowledge", name: "Internal Knowledge" },
+    { id: "training-onboarding", name: "Training & Onboarding" },
+    { id: "sop-policy", name: "SOP & Policy" },
+    { id: "knowledge-analytics", name: "Knowledge Analytics" },
+    { id: "enterprise-ai", name: "Enterprise AI" },
+    { id: "internal-chatbot", name: "Internal Chatbot" },
+    { id: "corporate-learning", name: "Corporate Learning" },
     { id: "case-studies", name: "Case Studies" },
-    { id: "analytics", name: "Analytics" },
-    { id: "roi", name: "ROI" },
-    { id: "cost-savings", name: "Cost Savings" },
-    { id: "predictive-analytics", name: "Predictive Analytics" },
-    { id: "product-strategy", name: "Product Strategy" },
   ];
 
   const displayedPosts = posts.slice(0, visiblePosts);

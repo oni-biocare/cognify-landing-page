@@ -4,7 +4,7 @@ date: "2026-02-13"
 excerpt: "The 10,000-hour rule is about world-class performance—not basic competence. With focused, deliberate practice, you can get surprisingly good at a new skill in about 20 hours."
 coverImage: "https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg"
 author: "ai-team"
-categories: ["learning", "productivity", "self-improvement", "skills"]
+categories: ["corporate-learning", "training-onboarding", "internal-knowledge"]
 ---
 
 # The First 20 Hours: How to Learn (Almost) Anything

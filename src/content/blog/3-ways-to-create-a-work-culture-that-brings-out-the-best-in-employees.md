@@ -4,7 +4,7 @@ date: "2026-02-13"
 excerpt: "Walkouts are loud. Checkouts are invisible. Here are three practical leadership moves—unblock communication, become responsive, and aim higher—to build a culture where people do their best work."
 coverImage: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
 author: "ai-team"
-categories: ["leadership", "work culture", "management", "employee engagement"]
+categories: ["corporate-learning", "internal-knowledge", "training-onboarding"]
 ---
 
 # 3 Ways to Create a Work Culture That Brings Out the Best in Employees
